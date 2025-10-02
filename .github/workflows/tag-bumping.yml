@@ -3,6 +3,13 @@ name: CI/Tag bumping
 
 on:
   pull_request:
+    paths-ignore:
+      - ".gitignore"
+      - ".mockery.yaml"
+      - "Containerfile"
+      - "LICENSE"
+      - "Makefile"
+      - "README.md"
     types:
       - closed
     branches:
